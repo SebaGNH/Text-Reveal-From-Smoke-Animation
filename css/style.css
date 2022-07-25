@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +8,32 @@
 body {
   background-color: #292929;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+main h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+  letter-spacing: 0.2em;
+}
+main h1 span {
+  display: inline-block;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
