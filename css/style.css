@@ -12,6 +12,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+main video {
+  object-fit: cover;
+  background-color: #000;
+}
 main h1 {
   margin: 0;
   padding: 0;
@@ -25,15 +29,44 @@ main h1 {
 }
 main h1 span {
   display: inline-block;
-  animation: animate 1s linear infinite;
+  animation: animate 1s linear forwards;
+  opacity: 0;
 }
 @keyframes animate {
   0% {
     opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
   }
   100% {
     opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0);
   }
+}
+main h1 span:nth-child(1) {
+  animation-delay: 2s;
+}
+main h1 span:nth-child(2) {
+  animation-delay: 2.5s;
+}
+main h1 span:nth-child(3) {
+  animation-delay: 3s;
+}
+main h1 span:nth-child(4) {
+  animation-delay: 3.5s;
+}
+main h1 span:nth-child(5) {
+  animation-delay: 4s;
+}
+main h1 span:nth-child(6) {
+  animation-delay: 4.5s;
+}
+main h1 span:nth-child(7) {
+  animation-delay: 5s;
+}
+main h1 span:nth-child(8) {
+  animation-delay: 5.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
